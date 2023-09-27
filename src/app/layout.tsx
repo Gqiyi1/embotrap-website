@@ -1,8 +1,14 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import React, { useRef, useState } from 'react'
+import * as THREE from 'three'
 
-const inter = Inter({ subsets: ['latin'] })
+
+const scene = new THREE.Scene();
+// const camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight, 0.1, 1000 );
+// const renderer = new THREE.WebGLRenderer();
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +22,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <div className='w-full h-full absolute flex items-center justify-center'>
+          <h1>EmbotrapIII</h1>
+        </div>
+        {children}
+        <footer>--Created by OmooLab--</footer>
+      </body>
+
     </html>
   )
 }

@@ -1,5 +1,5 @@
 {
-  "name": "asdfsdaf",
+  "name": "embotrap-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.85.0",
+    "@react-three/fiber": "^8.14.3",
+    "@types/three": "^0.156.0",
+    "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest"
+    "three": "^0.156.1",
+    "three-stdlib": "^2.26.8"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
     "@types/node": "latest",
+    "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
     "postcss": "latest",
     "tailwindcss": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest"
+    "typescript": "latest"
   }
 }
